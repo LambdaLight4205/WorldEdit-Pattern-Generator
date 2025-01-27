@@ -1,0 +1,89 @@
+/* General app styling */
+QWidget {
+    background-color: #f8f9fa; /* Light background */
+    color: #343a40;           /* Dark text color */
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Labels styling */
+QLabel {
+    font-weight: bold;
+    color: #495057;
+}
+
+/* Buttons styling */
+QPushButton {
+    background-color: #007bff; /* Blue button background */
+    color: #ffffff;           /* White text */
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+QPushButton:pressed {
+    background-color: #004085; /* Even darker blue when pressed */
+}
+
+/* Line edits styling */
+QLineEdit {
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 4px;
+    padding: 4px 8px;
+    background-color: #ffffff; /* White background */
+    color: #495057;           /* Dark text */
+}
+
+QLineEdit:focus {
+    border: 1px solid #80bdff; /* Blue border on focus */
+    outline: none;
+}
+
+/* Scroll area styling */
+QScrollArea {
+    border: 1px solid #dee2e6; /* Light gray border */
+    border-radius: 6px;
+    background-color: #ffffff; /* White background */
+}
+
+QScrollArea QFrame {
+    border: none; /* Remove inner frame border */
+}
+
+/* Scrollbar styling */
+QScrollBar:vertical {
+    border: none;
+    background: #e9ecef;
+    width: 8px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background: #adb5bd; /* Gray handle */
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #868e96; /* Darker gray on hover */
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+/* Form layout rows */
+QFormLayout > QHBoxLayout {
+    margin: 4px 0; /* Add spacing between rows */
+}
+
+/* Adjust spacing and padding for all elements */
+QWidget {
+    padding: 6px;
+    margin: 0;
+}
